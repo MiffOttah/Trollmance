@@ -1,0 +1,13 @@
+mse version: 0.3.6
+version: 2010-02-27
+short name: Trollmance Symbols
+position hint: 001
+icon: invoke.png
+installer group: Trollmance/Symbol Fonts/Symbols
+
+
+image font size: 16
+horizontal space: 3
+symbol:
+	code: I
+	image: invoke.png

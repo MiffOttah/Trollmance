@@ -1,0 +1,101 @@
+card field:
+	type: choice
+	name: card type
+	choice: mutantblood troll
+	choice: peasantblood troll
+	choice: midblood troll
+	choice: highblood troll
+	choice: seablood troll
+	choice: plot twist
+	choice: quirk
+	choice: lusus
+	choice: human
+	choice: bucket
+	choice colors cardlist:
+		mutantblood troll: rgb(255, 0, 0)
+		peasantblood troll: rgb(161, 161, 0)
+		midblood troll: rgb(65, 102, 0)
+		highblood troll: rgb(0, 0, 86)
+		seablood troll: rgb(43, 0, 87)
+		plot twist: rgb(0, 0, 0)
+		quirk: rgb(255, 25, 174)
+		lusus: rgb(200, 200, 200)
+		human: rgb(0, 220, 220)
+		bucket: rgb(128, 128, 128)
+	#
+#
+
+card field:
+	type: text
+	name: name
+	identifying: true
+	show statistics: false
+	card list visible: true
+	card list column: 1
+	multi line: true
+#
+
+card field:
+	type: choice
+	name: type text
+	choice: major troll
+	choice: minor troll
+	choice: major human
+	choice: minor human
+	choice: plot twist
+	choice: quirk
+	choice: lusus
+	choice: bucket
+	card list visible: true
+	card list column: 2
+#
+
+card field:
+	type: image
+	name: image
+	show statistics: false
+#
+
+card field:
+	type: image
+	name: sign
+	show statistics: false
+#
+
+card field:
+	type: text
+	name: effect text
+	show statistics: false
+	multi line: true
+#
+
+card field:
+	type: text
+	name: hate
+	card list column: 3
+#
+
+card field:
+	type: text
+	name: pity
+	card list column: 4
+#
+
+card field:
+	type: text
+	name: destructiveness/bullshit
+	card list column: 5
+#
+
+card field:
+	type: text
+	name: illustrator
+	show statistics: false
+#
+
+card field:
+	type: text
+	name: creator
+	show statistics: false
+#
+

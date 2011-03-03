@@ -1,0 +1,206 @@
+mse version: 0.3.8
+game: trollmance
+short name: Standard
+installer group: Trollmance/Standard
+icon: card-sample.png
+
+position hint: 01
+
+version: 2010-02-27
+depends on:
+	package: trollmance.mse-game
+	version: 2010-02-27
+depends on:
+	package: trollmance-symbols.mse-symbol-font
+	version: 2010-02-27
+
+card width: 400
+card height: 550
+card dpi: 72.009
+
+######  Begin card styles
+card style:
+	
+	card type:
+		left: 0
+		top: 0
+		width: 400
+		height: 550
+		z index: -3
+		render style: image
+		popup style: in place
+		choice images:
+			mutantblood troll: mutantblood.png
+			peasantblood troll: peasantblood.png
+			midblood troll: midblood.png
+			highblood troll: highblood.png
+			seablood troll: seablood.png
+			plot twist: plottwist.png
+			quirk: quirk.png
+			lusus: lusus_bucket.png
+			human: human.png
+			bucket: lusus_bucket.png
+		#
+	#
+	
+	type text:
+		left: 325
+		top: 100
+		width: 75
+		height: 300
+		z index: -2
+		render style: image
+		popup style: in place
+		choice images:
+			major troll: sidetext_maj_troll.png
+			minor troll: sidetext_min_troll.png
+			major human: sidetext_maj_human.png
+			minor human: sidetext_min_human.png
+			plot twist: sidetext_plottwist.png
+			quirk: sidetext_quirk.png
+			lusus: sidetext_lusus.png
+			bucket: sidetext_bucket.png
+		#
+	#
+	
+	name:
+		left: 25
+		top: 25
+		height: 50
+		width: { if is_character() then 275 else 350 }
+		alignment: middle
+		padding right: 2
+		padding left: 2
+		padding bottom: 0
+		z index: 2
+		font:
+			name: Courier New Bold
+			size: 24
+			scale down to: 12
+			color: rgb(0,0,0)
+	#
+	
+	image:
+		left: 25
+		top: 125
+		width: 300
+		height: 250
+		z index: 1
+	#
+	
+	sign:
+		left: 310
+		top: 35
+		width: 55
+		height: 55
+		z index: 1
+		visible: { is_character() }
+	#
+	
+	effect text:
+		left: 25
+		top: 400
+		height: { if is_character() then 60 else 100 }
+		width: 350
+		alignment: top
+		padding right: 2
+		padding left: 2
+		padding bottom: 0
+		z index: 4
+		font:
+			name: Courier New Bold
+			size: 14
+			scale down to: 8
+			color: rgb(0,0,0)
+		symbol font:
+			name: trollmance-symbols
+			alignment: middle
+			# scale down to: 16
+			size: 16
+	#
+	
+	destructiveness/bullshit:
+		left: 169
+		top: 469
+		height: 64
+		width: 64
+		alignment: middle center
+		padding right: 2
+		padding left: 2
+		padding bottom: 0
+		z index: 3
+		font:
+			name: Courier New Bold
+			size: 40
+			color: rgb(0,0,0)
+		visible: { is_character() }
+	#
+	
+	hate:
+		left: 100
+		top: 475
+		height: 50
+		width: 60
+		alignment: middle center
+		padding right: 2
+		padding left: 2
+		padding bottom: 0
+		z index: 3
+		font:
+			name: Courier New Bold
+			size: 30
+			color: rgb(255,255,255)
+		visible: { is_troll() }
+	#
+	
+	pity:
+		left: 240
+		top: 475
+		height: 50
+		width: 60
+		alignment: middle center
+		padding right: 2
+		padding left: 2
+		padding bottom: 0
+		z index: 3
+		font:
+			name: Courier New Bold
+			size: 30
+			color: rgb(255,255,255)
+		visible: { is_troll() }
+	#
+	
+	creator:
+		left: 10
+		top: 510
+		height: 25
+		width: 85
+		alignment: left shrink-overflow
+		padding right: 2
+		padding left: 2
+		padding bottom: 0
+		z index: 3
+		font:
+			name: Courier New
+			size: 10
+			color: rgb(255,255,255)
+		visible: { is_character() }
+	#
+	
+	illustrator:
+		left: 305
+		top: 510
+		height: 25
+		width: 85
+		alignment: right shrink-overflow
+		padding right: 2
+		padding left: 2
+		padding bottom: 0
+		z index: 3
+		font:
+			name: Courier New
+			size: 10
+			color: rgb(255,255,255)
+	#
+	
+#

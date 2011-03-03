@@ -1,0 +1,16 @@
+Step 1:
+
+Download and install Magic Set Editor from http://magicseteditor.sourceforge.net/download.html .  It doesn't matter what version you install.
+
+Step 2: 
+
+Open up the directory you installed MSE to, like "D:\Program Files\Magic Set Editor 2" .  Then open up the "data" folder.
+
+Step 3:
+
+Put the "trollmance.mse-game", "trollmance-standard.mse-style", and "trollmance-symbols.mse-symbol-font" folders into that directory.
+
+Step 4:
+
+Enjoy!
+

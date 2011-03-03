@@ -1,0 +1,14 @@
+mse version: 0.3.8
+full name: Trollmance - The Shippening
+short name: Trollmance
+installer group: Trollmance/game files
+icon: card-back.png
+position hint: 5
+
+version: 2010-02-27
+
+init script: include file: script
+
+include file: card_fields
+
+#
