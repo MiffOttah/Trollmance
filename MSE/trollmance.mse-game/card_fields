@@ -67,6 +67,7 @@ card field:
 	name: effect text
 	show statistics: false
 	multi line: true
+	script: text_filter(input: value, card_name: card.name)
 #
 
 card field:

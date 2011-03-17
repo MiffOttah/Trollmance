@@ -1,5 +1,5 @@
 mse version: 0.3.6
-version: 2010-02-27
+version: 2010-03-17
 short name: Trollmance Symbols
 position hint: 001
 icon: invoke.png
@@ -11,3 +11,9 @@ horizontal space: 3
 symbol:
 	code: I
 	image: invoke.png
+symbol:
+	code: D
+	image: trollian.png
+symbol:
+	code: R
+	image: romance.png

@@ -14,19 +14,14 @@ is_character := {
 
 text_filter := 
 		# step 1 : remove all automatic tags
-		tag_remove_rule(tag: "<sym-auto>") +
-		# step 2 : expand shortcut words ~ and CARDNAME
-		replace_rule(
-			match: "CARDNAME",
-			in_context: "(^|[[:space:]]|\\()<match>", # TODO: Allow any punctuation before
-			replace: "<atom-cardname></atom-cardname>"
-			) +
-		# step 3 : fill in the cardname atom field
-		tag_contents_rule(
-			tag: "<atom-cardname>",
-			contents: { if card.name=="" then "CARDNAME" else card.name }
-			) +
+		#tag_remove_rule(tag: "<sym-auto>") +
 		# step 4 : symbols
 		replace_rule(
 			match: "\\[I>",
-			replace: "<sym-auto>I</sym-auto>" );
+			replace: "<sym-auto>I</sym-auto>" ) +
+		replace_rule(
+			match: "\\[D\\]",
+			replace: "<sym-auto>D</sym-auto>" ) +
+		replace_rule(
+			match: "\\[R\\]",
+			replace: "<sym-auto>R</sym-auto>" );

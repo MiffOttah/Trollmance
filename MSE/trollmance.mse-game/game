@@ -5,10 +5,11 @@ installer group: Trollmance/game files
 icon: card-back.png
 position hint: 5
 
-version: 2010-02-27
+version: 2010-03-17
 
 init script: include file: script
 
 include file: card_fields
+include file: add_cards_scripts
 
 #

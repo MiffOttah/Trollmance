@@ -6,13 +6,13 @@ icon: card-sample.png
 
 position hint: 01
 
-version: 2010-02-27
+version: 2010-03-17
 depends on:
 	package: trollmance.mse-game
-	version: 2010-02-27
+	version: 2010-03-17
 depends on:
 	package: trollmance-symbols.mse-symbol-font
-	version: 2010-02-27
+	version: 2010-03-17
 
 card width: 400
 card height: 550
