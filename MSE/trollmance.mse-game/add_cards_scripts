@@ -1,0 +1,24 @@
+add cards script:
+	name: &Troll
+	description: Adds a troll
+	script: [ new_card([card_type: "mutantblood troll", type_text: "major troll"]) ]
+
+add cards script:
+	name: &Human
+	description: Adds a human
+	script: [ new_card([card_type: "human", type_text: "major human"]) ]
+
+add cards script:
+	name: &Plot Twist
+	description: Adds a plot twist
+	script: [ new_card([card_type: "plot twist", type_text: "plot twist"]) ]
+
+add cards script:
+	name: &Quirk
+	description: Adds a quirk
+	script: [ new_card([card_type: "quirk", type_text: "quirk"]) ]
+
+add cards script:
+	name: &Lusus
+	description: Adds a lusus
+	script: [ new_card([card_type: "lusus", type_text: "lusus"]) ]
